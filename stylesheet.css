@@ -27,12 +27,12 @@ h1 {
 
   } 
 
-  li a:hover {
+  .menu li a:hover {
     color: black;
     text-decoration: underline;
   } 
   
-  .active {
+  .menu li a.active {
     color: teal;
   }
 
