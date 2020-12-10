@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $("img").onmouseover(function(){
-      $("art_gallary").fadeTo("slow", 0.15);
+ $("#imgGrow").onmouseover {: function(){
+    $(img).fadeTo("slow", "height:100px" "width:100px"});
   
   
