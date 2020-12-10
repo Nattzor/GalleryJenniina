@@ -1,5 +1,4 @@
-$(document).ready(function(){
- $("#imgGrow").onmouseover {: function(){
-    $(img).fadeTo("slow", "height:100px" "width:100px"});
-  
-  
+    $("#imgGrow").hover(
+        function(){$(this).animate({width: "370px", height:"355px"}, 1000);},        
+        function(){$(this).animate({width: "270px", height:"255px"}, 1000);} 
+);
