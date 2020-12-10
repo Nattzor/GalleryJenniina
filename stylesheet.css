@@ -1,40 +1,231 @@
-h1 {
-    color: navy;
-    float: left;
+  #container {
+    margin: 20px auto;
+    width: 1200px;
   }
- 
-  ul {
+
+h1 {
+    color:rgb(167, 201, 201);
+    float: left;
+    width: 350px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    margin-top: 30px;
+  }
+
+  .home {
+    opacity: 60%;
+    width: 1200px;
+    height: 900px;
+    margin-top: 30px;
+  } 
+
+  .centertext {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: absolute; 
+    top: 500px; 
+    left: 450px; 
+  }
+
+  .menu ul {
     margin: 0%;
     padding: 0%;
     list-style-type: none;
-  } 
-  li {
+    }
+
+  .menu a {
     float: left;
-  } 
-
-  li a {
-    display: block;
+    width: 100px;
     text-align: center;
+    font-size: 18px;
     padding: 15px;
+    display: block;
     text-decoration: none;
-
+    margin-top: 25px;
   } 
 
-  li a:hover {
+  .menu li a:hover {
+    color: black;
     text-decoration: underline;
   } 
-
-    .container { 
-      margin: 20px;
-      height: 600px;
-      width: 900px;
-      border: 1px solid #333333;
-      display: grid;
-
-      grid-template-columns: 30% 40px 30% 40px 30% ;
-      grid-template-rows: 50px auto 50px auto 50px;
+  
+  .menu li a.active {
+    color: teal;
   }
+ 
+  .art_gallary { 
+     height: 900px;
+     width: 900px;
+     display: grid;
+     margin-left: 150px;
+     margin-top: 50px;
+      
+grid-template-columns: 30% 40px 30% 40px 30% ;
+grid-template-rows: 75px auto 50px auto 50px auto 50px;
+  }
+  
 .iteam-a { 
   background-color: white;
   grid-column-start: 1;
   grid-column-end: -1;
+  text-align: center;
+  margin-top: 5px;
+}
+.gallery_image { 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+  .img1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .img2 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .img3 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+  .img4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  .img5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+  .img6 {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+.imgid7 {
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  float: left;
+  margin: 15px;
+  margin-right: 50px;
+}
+
+p {
+  padding: 30px;
+}
+input[type=text] {
+  width: 30%;
+  padding: 12px;
+  margin: 3px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  background-color: rgb(167, 201, 201);
+  color: white;
+  width: 15%;
+  padding: 12px;
+  margin: 3px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+}
+.instagram {
+  width: 40px;
+  height: 40px;
+  float: right;
+  margin: 30px;
+}
+h4 {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+footer {
+  margin-top: 150px;
+  background-color: teal;
+  padding: 30px 30px;
+}
+
+@media screen and (max-width: 600px) {
+  #container {
+      margin: 10px auto;
+      width: 600px;
+    }
+
+  .home {
+    width: 600px;
+    height: 450px;
+    opacity: 60%;
+    margin-top: 15px;
+  }
+  h1 {
+    color:rgb(167, 201, 201);
+    float: left;
+    width: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    margin-top: 15px;
+  }
+  .centertext {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: white;
+    position: absolute; 
+    top: 350px; 
+    left: 200px; 
+  }
+
+  .menu a {
+    width: 50px;
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 30px;
+  } 
+
+  .art_gallary { 
+    height: 550px;
+    width: 550px;
+    display: grid;
+    margin-left: 15px;
+    margin-top: 20px;
+     
+grid-template-columns: 30% 40px 30% 40px 30% ;
+grid-template-rows: 60px auto 20px auto 20px auto 20px;
+ }
+
+ .imgid7 {
+  width: 150px;
+  height: 150px;
+  float: left;
+  margin-right: 30px; 
+}
+
+p {
+  padding: 15px;
+}
+
+.instagram {
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin: 15px;
+}
+footer {
+  margin-top: 50px;
+  padding: 15px 15px;
+}
+}
